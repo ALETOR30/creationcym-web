@@ -1,0 +1,50 @@
+body {
+    background-color: rgba(245, 212, 227, 0.68);
+    text-align: center;
+}
+
+.gpsicon {
+    
+    width: 4rem;
+    height: 5rem;
+}
+
+span {
+    font-size: 80%;
+    padding-bottom: 30px;
+}
+p {
+    font-size: 80%;
+}
+ header {
+    height: auto;
+    width: auto;
+    background: url(header.jpg);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-decoration: double;
+    color: aliceblue;
+    text-shadow: 4px 2px 2px #b24189;
+}
+
+.nav-bar {
+    padding: 2%;
+    max-height: fit-content;
+    min-height: fit-content;
+    background-color: rgb(237, 190, 239);
+    
+}
+a {
+    margin-right: 3rem;
+}
+.contenedorgps {
+    text-align: ;
+}
+.span-gps {
+    padding-bottom: 10px;
+    display: inline-flex;
+}
+.span1 {
+    padding-bottom: 30px;
+    padding-top: 0%;
+}
