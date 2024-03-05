@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Harlow-Solid-Italic';
+    src:url('Harlow-Solid-Italic.ttf.woff') format('woff'),
+        url('Harlow-Solid-Italic.ttf.svg#Harlow-Solid-Italic') format('svg'),
+        url('Harlow-Solid-Italic.ttf.eot'),
+        url('Harlow-Solid-Italic.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
