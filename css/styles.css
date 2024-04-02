@@ -21,6 +21,16 @@ html {
     -moz-box-shadow: 2px 1px 20px -6px rgba(0,0,0,0.75);
     box-shadow: 2px 1px 20px -6px rgba(0,0,0,0.75);
 }
+h1, h2, h3 {
+    color:#eeebf2f1;
+    text-shadow: 1px 2px rgb(11, 10, 11);
+    font-family: 'Harlow-Solid-Italic';
+}
+h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(250, 149, 231);
+}
 /**WHATSPP**/
 .boton__redes {
     width: fit-content;
@@ -28,8 +38,7 @@ html {
     position: fixed;
     bottom: 0;
     right: 0;
-    -webkit-animation: infinite;
-    web
+
 }
 .whatsapp {
 
@@ -131,7 +140,7 @@ p {
     padding-top: 0.5rem;
     padding-bottom: 0rem;
     background-image: linear-gradient(to top, var(--Color-fondo-principal) 0%, rgba(214, 62, 235, 0.616) 100%);
-    background-color: rgb(246, 174, 249);
+    background-color: rgba(246, 174, 249, 0.881);
     text-shadow: 1px 1px rgb(147, 47, 248);
     color: var(--Color-fondo-enlace);
     border-radius: 1rem;
@@ -139,7 +148,7 @@ p {
     margin-bottom: 8px;
     
 }
-nav a:hover {
+nav a:hover, .nav__bar--activo {
     color: var(--Color-fondo-enlace);
     /*background-color:rgba(137, 43, 226, 0.707);*/
     border-radius: 90px;
@@ -164,7 +173,7 @@ a {
     margin-right: 3rem;
     text-decoration: none;
 
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 :visited{
     color: none;
@@ -187,6 +196,11 @@ a {
     
    
 
+}
+.container-serv__portafolio {
+    max-width: fit-content;
+    min-width: fit-content;
+    
 }
 
 .serv-contenido p {
@@ -279,17 +293,103 @@ textarea {
     grid-template-rows: repeat(2, 1fr);
 }
 .contenedor__campo--mensaje {
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
+
+}
+
+/**STILOS PORTAFOLIO**//**STILOS PORTAFOLIO**//**STILOS PORTAFOLIO**//**STILOS PORTAFOLIO**//**STILOS PORTAFOLIO**/
+/**STILOS PORTAFOLIO**//**STILOS PORTAFOLIO**//**STILOS PORTAFOLIO**//**STILOS PORTAFOLIO**//**STILOS PORTAFOLIO**/
+/**STILOS PORTAFOLIO**//**STILOS PORTAFOLIO**//**STILOS PORTAFOLIO**//**STILOS PORTAFOLIO**//**STILOS PORTAFOLIO**/
+
+
+.serv-contenido__portafolio {                                   /**STILOS PORTAFOLIO**/
+    display: flex;                                              /**STILOS PORTAFOLIO**/
+    flex-direction: column;
+}
+
+.serv-contenido__portafolio--candyBarCompletoSemiOvalo, .serv-contenido__portafolio--piñatas {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+
+
+    grid-template-rows: 100px repeat(3, 200px);
+    gap: 10px;
+}
+.serv-contenido__portafolio--candyBarCompletoSemiOvalo h2 {
+
+    grid-column: 1 / 5;
+}
+
+
+.serv-contenido__portafolio--candyBarCompletoCircular {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+
+
+    grid-template-rows: 100px repeat(3, 200px);
+    gap: 10px;
+}
+/*.serv-contenido__portafolio--piñatas :nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color:rgba(255, 192, 203, 0.427) ;
+    border-radius: 1rem;
+}
+.serv-contenido__portafolio--piñatas :nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color:rgba(255, 192, 203, 0.427) ;
+    border-radius: 1rem;
+
+}
+.serv-contenido__portafolio--piñatas :nth-child(4) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-color:rgba(255, 192, 203, 0.427) ;
+    border-radius: 1rem;*/
+.serv-contenido__portafolio--piñatas img {
+    background-color:rgba(255, 192, 203, 0.427) ;
+    border-radius: 1.5rem
+    }
+    .serv-contenido__portafolio--piñatas img:hover {
+        transform: scale(2);
+        transition: all 300ms;
+        background-color: rgba(250, 246, 247, 0.777);
+        -webkit-box-shadow: 2px 1px 20px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 1px 20px -6px rgba(0,0,0,0.75);
+        box-shadow: 2px 1px 20px -6px rgba(0,0,0,0.75);
+
+
+    }
+.serv-contenido__portafolio--piñatas :nth-child(2), .serv-contenido__portafolio--piñatas :nth-child(3), .serv-contenido__portafolio--piñatas :nth-child(4), .serv-contenido__portafolio--piñatas :nth-child(5) {
+    height: 100%;
+    width: 100%;
+
+}
+.serv-contenido__portafolio--candyBarCompletoCircular h2, .serv-contenido__portafolio--piñatas h2 {
+    grid-column: 1 / 5;
+
+
 
 }
 
 
-
+/**FIN___STILOS PORTAFOLIO**//**FIN___STILOS PORTAFOLIO**//**FIN___STILOS PORTAFOLIO**//**FIN___STILOS PORTAFOLIO**/
+/**FIN___STILOS PORTAFOLIO**//**FIN___STILOS PORTAFOLIO**//**FIN___STILOS PORTAFOLIO**//**FIN___STILOS PORTAFOLIO**/
+/**FIN___STILOS PORTAFOLIO**//**FIN___STILOS PORTAFOLIO**//**FIN___STILOS PORTAFOLIO**//**FIN___STILOS PORTAFOLIO**/
 /**FOOTER**/
 
+.footer__icon--fondo {
+    background-color: rgba(230, 234, 235, 0.948);
+    border-radius: 50%;
+    width: 6rem ;
+    height: 6rem;
+}
 .footer__icon {
     height: 2rem;
     width: 2rem;
+
 }
 
 footer {
