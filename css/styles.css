@@ -350,7 +350,9 @@ textarea {
     border-radius: 1rem;*/
 .serv-contenido__portafolio--piñatas img {
     background-color:rgba(255, 192, 203, 0.427) ;
-    border-radius: 1.5rem
+    border-radius: 1.5rem;
+    height: 100%;
+    width: 100%;
     }
     .serv-contenido__portafolio--piñatas img:hover {
         transform: scale(2);
@@ -362,11 +364,11 @@ textarea {
 
 
     }
-.serv-contenido__portafolio--piñatas :nth-child(2), .serv-contenido__portafolio--piñatas :nth-child(3), .serv-contenido__portafolio--piñatas :nth-child(4), .serv-contenido__portafolio--piñatas :nth-child(5) {
+/*.serv-contenido__portafolio--piñatas :nth-child(2), .serv-contenido__portafolio--piñatas :nth-child(3), .serv-contenido__portafolio--piñatas :nth-child(4), .serv-contenido__portafolio--piñatas :nth-child(5) {
     height: 100%;
     width: 100%;
 
-}
+}*/
 .serv-contenido__portafolio--candyBarCompletoCircular h2, .serv-contenido__portafolio--piñatas h2 {
     grid-column: 1 / 5;
 
