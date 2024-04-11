@@ -307,12 +307,12 @@ textarea {
     flex-direction: column;
 }
 
-.serv-contenido__portafolio--candyBarCompletoSemiOvalo, .serv-contenido__portafolio--piñatas {
+.serv-contenido__portafolio--piñatas {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, 1fr);
 
 
-    grid-template-rows: 100px repeat(3, 200px);
+    grid-template-rows: 100px repeat(3, 1fr);
     gap: 10px;
 }
 .serv-contenido__portafolio--candyBarCompletoSemiOvalo h2 {
@@ -321,13 +321,13 @@ textarea {
 }
 
 
-.serv-contenido__portafolio--candyBarCompletoCircular {
+.serv-contenido__portafolio--candyBarCompletoSemiOvalo, .serv-contenido__portafolio--candyBarCompletoCircular {
     
     display: grid;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, 1fr);
 
 
-    grid-template-rows: 100px repeat(3, 200px);
+    grid-template-rows: 100px repeat(4, 1fr);
     gap: 10px;
 }
 /*.serv-contenido__portafolio--piñatas :nth-child(2) {
@@ -348,19 +348,18 @@ textarea {
     grid-row: 2 / 3;
     background-color:rgba(255, 192, 203, 0.427) ;
     border-radius: 1rem;*/
-.serv-contenido__portafolio--piñatas img {
+.serv-contenido__portafolio--piñatas img, .serv-contenido__portafolio--candyBarCompletoSemiOvalo img, .serv-contenido__portafolio--candyBarCompletoCircular img {
     background-color:rgba(255, 192, 203, 0.427) ;
     border-radius: 1.5rem;
     height: 100%;
     width: 100%;
     }
-    .serv-contenido__portafolio--piñatas img:hover {
-        transform: scale(2);
-        transition: all 300ms;
-        background-color: rgba(250, 246, 247, 0.777);
-        -webkit-box-shadow: 2px 1px 20px -6px rgba(0,0,0,0.75);
-        -moz-box-shadow: 2px 1px 20px -6px rgba(0,0,0,0.75);
-        box-shadow: 2px 1px 20px -6px rgba(0,0,0,0.75);
+.serv-contenido__portafolio--piñatas img:hover, .serv-contenido__portafolio--candyBarCompletoSemiOvalo img:hover, .serv-contenido__portafolio--candyBarCompletoCircular img:hover {   transform: scale(2);
+    transition: all 300ms;
+    background-color: rgba(250, 246, 247, 0.777);
+    -webkit-box-shadow: 2px 1px 20px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 1px 20px -6px rgba(0,0,0,0.75);
+    box-shadow: 2px 1px 20px -6px rgba(0,0,0,0.75);
 
 
     }
