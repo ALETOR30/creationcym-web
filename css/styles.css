@@ -186,7 +186,7 @@ a {
     font-size: 1.2rem;
 }
 .container-serv {
-    max-width: 60%;
+    max-width: 75%;
     margin-top: 2px;
     /*display: flex;*/
     margin: 0 auto;
@@ -200,7 +200,8 @@ a {
 .container-serv__portafolio {
     /*max-width: fit-content;
     min-width: fit-content;*/
- max-width: 80%;   
+ width: 85%;
+ height: fit-content;   
 }
 
 .serv-contenido p {
@@ -215,7 +216,7 @@ a {
     /*display: flex;*//**probando grid**/
     background-color: rgba(58, 60, 58, 0.584);
    width: fit-content;
-   height: 100%;
+   height: fit-content;
      border-radius: 1rem;
     padding: 0px 32px 14px 32px;
 }
@@ -312,7 +313,7 @@ textarea {
     grid-template-columns: repeat(4, 1fr);
 
 
-    grid-template-rows: 100px repeat(4, 1fr);
+    grid-template-rows: 100px repeat(6, 1fr);
     gap: 10px;
 }
 .serv-contenido__portafolio--candyBarCompletoSemiOvalo h2 {
@@ -327,7 +328,7 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
 
 
-    grid-template-rows: 100px repeat(4, 1fr);
+    grid-template-rows: 100px repeat(3, 1fr);
     gap: 10px;
 }
 .serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(5) {
@@ -352,8 +353,28 @@ grid-row: 4 / 5
     grid-column: 2 / 3;
     grid-row: 4 / 5;
 }
-/*.serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(10) {               CON>TINUAR GALERIA SEMIOVALOCON>TINUAR GALERIA SEMIOVALO
-    grid-column: 3 / 4;                                                                 CON>TINUAR GALERIA SEMIOVALOCON>TINUAR GALERIA SEMIOVALO
+/*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
+/*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
+.serv-contenido__portafolio--candyBarCompletoCircular :nth-child(5) {
+    
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+   }
+.serv-contenido__portafolio--candyBarCompletoCircular :nth-child(6) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.serv-contenido__portafolio--candyBarCompletoCircular :nth-child(7) {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+.serv-contenido__portafolio--candyBarCompletoCircular :nth-child(8) {
+grid-column: 1 / 2;
+grid-row: 4 / 5
+}
+/*FIN CONTENIDO GALERIA CANDY BAR CIRCULAR*//*FIN CONTENIDO GALERIA CANDY BAR CIRCULAR*//*FIN CONTENIDO GALERIA CANDY BAR CIRCULAR*/
+/*.serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(10) {               
+    grid-column: 3 / 4;                                                                     
     grid-row: 4 / 5;
 }*/
 .serv-contenido__portafolio--piñatas img , .serv-contenido__portafolio--candyBarCompletoSemiOvalo img , .serv-contenido__portafolio--candyBarCompletoCircular img {
