@@ -353,6 +353,10 @@ grid-row: 4 / 5
     grid-column: 2 / 3;
     grid-row: 4 / 5;
 }
+.serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(10) {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
 /*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
 /*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
 .serv-contenido__portafolio--candyBarCompletoCircular :nth-child(5) {
