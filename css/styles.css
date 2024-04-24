@@ -186,13 +186,14 @@ a {
     font-size: 1.2rem;
 }
 .container-serv {
-    max-width: 75%;
+    max-width: 85%;
     margin-top: 2px;
     /*display: flex;*/
     margin: 0 auto;
     border-radius: 1rem;
     background-image:url(globos.png);
     background-position: center;
+    height: 100%;
     
    
 
@@ -201,7 +202,7 @@ a {
     /*max-width: fit-content;
     min-width: fit-content;*/
  width: 85%;
- height: fit-content;   
+ height: 100%;   
 }
 
 .serv-contenido p {
@@ -252,10 +253,11 @@ a {
 }
 .container-serv h2 {
     
-    font-size: 2.2rem;
+    font-size: 3.5rem;
     margin-bottom: 2px;
     color: rgb(247, 241, 241);
     text-shadow: 1px 2px rgb(11, 10, 11);
+    
 }
 
 
@@ -308,13 +310,21 @@ textarea {
     flex-direction: column;
 }
 
+
 .serv-contenido__portafolio--piñatas {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
 
-    grid-template-rows: 100px repeat(6, 1fr);
+    grid-template-rows: 120px repeat(6, 1fr);
     gap: 10px;
+
+}
+.serv-contenido__portafolio--piñatas p {
+    color: white;
+    font-size: 2rem;
+    text-shadow: 1px 2px rgb(11, 10, 11);
+
 }
 .serv-contenido__portafolio--candyBarCompletoSemiOvalo h2 {
 
@@ -328,8 +338,13 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
 
 
-    grid-template-rows: 100px repeat(3, 1fr);
-    gap: 10px;
+    grid-template-rows: 120px repeat(3, 1fr);
+    row-gap: 45px;
+    column-gap: 20px;
+    
+    color: white;
+    font-size: bold;
+    text-shadow: 1px 2px rgb(11, 10, 11);
 }
 .serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(5) {
     
@@ -339,49 +354,58 @@ textarea {
 .serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(6) {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-}
-.serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(7) {
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
-}
-.serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(8) {
-grid-column: 1 / 2;
-grid-row: 4 / 5
-}
-
-.serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(9) {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-}
-.serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(10) {
+}/*CONTENIDO GALERIA CANDY BAR OVALO*/
+.serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(7){ /*CONTENIDO GALERIA CANDY BAR OVALO*/
+    grid-column: 3 / 4;/*CONTENIDO GALERIA CANDY BAR OVALO*/
+    grid-row: 3 / 4;/*CONTENIDO GALERIA CANDY BAR OVALO*/
+}/*CONTENIDO GALERIA CANDY BAR OVALO*/
+.serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(8) {/*CONTENIDO GALERIA CANDY BAR OVALO*/
+grid-column: 1 / 2;/*CONTENIDO GALERIA CANDY BAR OVALO*/
+grid-row: 4 / 5/*CONTENIDO GALERIA CANDY BAR OVALO*/
+}/*CONTENIDO GALERIA CANDY BAR OVALO*/
+/*CONTENIDO GALERIA CANDY BAR OVALO*/
+.serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(9) {/*CONTENIDO GALERIA CANDY BAR OVALO*/
+    grid-column: 2 / 3;/*CONTENIDO GALERIA CANDY BAR OVALO*/
+    grid-row: 4 / 5;/*CONTENIDO GALERIA CANDY BAR OVALO*/
+}/*CONTENIDO GALERIA CANDY BAR OVALO*/
+.serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(10) {/*CONTENIDO GALERIA CANDY BAR OVALO*/
     grid-column: 3 / 4;
     grid-row: 4 / 5;
 }
 /*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
 /*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*//*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
-.serv-contenido__portafolio--candyBarCompletoCircular :nth-child(5) {
+.serv-contenido__portafolio--candyBarCompletoCircular :nth-child(5) {                   /*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
     
     grid-column: 1 / 2;
     grid-row: 3 / 4;
    }
-.serv-contenido__portafolio--candyBarCompletoCircular :nth-child(6) {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
+.serv-contenido__portafolio--candyBarCompletoCircular :nth-child(6) {/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
+    grid-column: 2 / 3;/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
+    grid-row: 3 / 4;/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
 }
-.serv-contenido__portafolio--candyBarCompletoCircular :nth-child(7) {
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
+.serv-contenido__portafolio--candyBarCompletoCircular :nth-child(7) {/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
+    grid-column: 3 / 4;/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
+    grid-row: 3 / 4;/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
 }
-.serv-contenido__portafolio--candyBarCompletoCircular :nth-child(8) {
-grid-column: 1 / 2;
-grid-row: 4 / 5
+.serv-contenido__portafolio--candyBarCompletoCircular :nth-child(8) {/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
+grid-column: 1 / 2;/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
+grid-row: 4 / 5/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
 }
+.serv-contenido__portafolio--candyBarCompletoCircular :nth-child(9) {/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
+    grid-column: 2/ 3;/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
+    grid-row: 4 / 5/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
+    }
 /*FIN CONTENIDO GALERIA CANDY BAR CIRCULAR*//*FIN CONTENIDO GALERIA CANDY BAR CIRCULAR*//*FIN CONTENIDO GALERIA CANDY BAR CIRCULAR*/
-/*.serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(10) {               
-    grid-column: 3 / 4;                                                                     
-    grid-row: 4 / 5;
-}*/
-.serv-contenido__portafolio--piñatas img , .serv-contenido__portafolio--candyBarCompletoSemiOvalo img , .serv-contenido__portafolio--candyBarCompletoCircular img {
+.serv-contenido__portafolio--piñatas p {
+    background-color:rgba(192, 255, 200, 0.605) ;
+    border-radius: 1.5rem;
+    grid-row: 6 / 7;
+    height: 100%;
+    margin: 0;
+}
+    
+
+.serv-contenido__portafolio--piñatas img , .serv-contenido__portafolio--candyBarCompletoSemiOvalo img , .serv-contenido__portafolio--candyBarCompletoCircular img{
     background-color:rgba(255, 192, 203, 0.427) ;
     border-radius: 1.5rem;
     height: 100%;
