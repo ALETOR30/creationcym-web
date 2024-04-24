@@ -323,7 +323,12 @@ textarea {
 .serv-contenido__portafolio--piñatas p {
     color: white;
     font-size: 2rem;
-    text-shadow: 1px 2px rgb(11, 10, 11);
+    text-shadow: 1px 2px rgb(11, 10, 11);   
+    background-color:rgba(192, 255, 200, 0.605) ;
+    border-radius: 1.5rem;
+    grid-row: 6 / 7;
+    height: 100%;
+    margin: 0;
 
 }
 .serv-contenido__portafolio--candyBarCompletoSemiOvalo h2 {
@@ -360,8 +365,8 @@ textarea {
     grid-row: 3 / 4;/*CONTENIDO GALERIA CANDY BAR OVALO*/
 }/*CONTENIDO GALERIA CANDY BAR OVALO*/
 .serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(8) {/*CONTENIDO GALERIA CANDY BAR OVALO*/
-grid-column: 1 / 2;/*CONTENIDO GALERIA CANDY BAR OVALO*/
-grid-row: 4 / 5/*CONTENIDO GALERIA CANDY BAR OVALO*/
+    grid-column: 1 / 2;/*CONTENIDO GALERIA CANDY BAR OVALO*/
+    grid-row: 4 / 5;/*CONTENIDO GALERIA CANDY BAR OVALO*/
 }/*CONTENIDO GALERIA CANDY BAR OVALO*/
 /*CONTENIDO GALERIA CANDY BAR OVALO*/
 .serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(9) {/*CONTENIDO GALERIA CANDY BAR OVALO*/
@@ -378,7 +383,7 @@ grid-row: 4 / 5/*CONTENIDO GALERIA CANDY BAR OVALO*/
     
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-   }
+}
 .serv-contenido__portafolio--candyBarCompletoCircular :nth-child(6) {/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
     grid-column: 2 / 3;/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
     grid-row: 3 / 4;/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
@@ -389,21 +394,14 @@ grid-row: 4 / 5/*CONTENIDO GALERIA CANDY BAR OVALO*/
 }
 .serv-contenido__portafolio--candyBarCompletoCircular :nth-child(8) {/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
 grid-column: 1 / 2;/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
-grid-row: 4 / 5/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
+grid-row: 4 / 5;/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
 }
 .serv-contenido__portafolio--candyBarCompletoCircular :nth-child(9) {/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
     grid-column: 2/ 3;/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
-    grid-row: 4 / 5/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
+    grid-row: 4 / 5;/*CONTENIDO GALERIA CANDY BAR CIRCULAR*/
     }
 /*FIN CONTENIDO GALERIA CANDY BAR CIRCULAR*//*FIN CONTENIDO GALERIA CANDY BAR CIRCULAR*//*FIN CONTENIDO GALERIA CANDY BAR CIRCULAR*/
-.serv-contenido__portafolio--piñatas p {
-    background-color:rgba(192, 255, 200, 0.605) ;
-    border-radius: 1.5rem;
-    grid-row: 6 / 7;
-    height: 100%;
-    margin: 0;
-}
-    
+
 
 .serv-contenido__portafolio--piñatas img , .serv-contenido__portafolio--candyBarCompletoSemiOvalo img , .serv-contenido__portafolio--candyBarCompletoCircular img{
     background-color:rgba(255, 192, 203, 0.427) ;
