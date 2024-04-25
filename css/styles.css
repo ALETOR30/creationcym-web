@@ -186,7 +186,7 @@ a {
     font-size: 1.2rem;
 }
 .container-serv {
-    max-width: 85%;
+    max-width: fit-content;
     margin-top: 2px;
     /*display: flex;*/
     margin: 0 auto;
@@ -211,7 +211,7 @@ a {
 .serv-contenido {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     
     column-gap: 10px;
     /*display: flex;*//**probando grid**/
@@ -224,8 +224,9 @@ a {
 /**boxes servicio**/
 .box {
     border-radius: 0.6rem;
-    margin: 40px;
+    margin: 10px;
     padding: 10px;
+    background-image: linear-gradient(to top,rgba(190, 71, 230, 0.356) 30%, rgba(225, 240, 115, 0) 70%);
 
 }
 .box:hover {
@@ -335,7 +336,10 @@ textarea {
 
     grid-column: 1 / 5;
 }
-
+.serv-contenido__portafolio--candyBarCompletoSemiOvalo p, .serv-contenido__portafolio--candyBarCompletoCircular p{
+    font-size: 1.7rem;
+    margin: 0 auto;
+}
 
 .serv-contenido__portafolio--candyBarCompletoSemiOvalo, .serv-contenido__portafolio--candyBarCompletoCircular {
     
@@ -344,18 +348,19 @@ textarea {
 
 
     grid-template-rows: 120px repeat(3, 1fr);
-    row-gap: 45px;
+    row-gap: 80px;
     column-gap: 20px;
     
     color: white;
-    font-size: bold;
+    font-size: 3rem;
     text-shadow: 1px 2px rgb(11, 10, 11);
 }
+
 .serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(5) {
     
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-   }
+}
 .serv-contenido__portafolio--candyBarCompletoSemiOvalo :nth-child(6) {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
