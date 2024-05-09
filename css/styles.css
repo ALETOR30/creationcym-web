@@ -32,17 +32,20 @@ h1 {
     color: rgb(250, 149, 231);
 }
 /**WHATSPP**/
+
+
 .boton__redes {
     width: fit-content;
     height: fit-content;
     position: fixed;
     bottom: 0;
-    right: 0;
+    left: 0;
 
 }
 .whatsapp {
 
     transform: scale(1.3);
+    
 
 }
 .whatsapp img:hover{
@@ -139,8 +142,8 @@ p {
     justify-content: space-evenly;
     padding-top: 0.5rem;
     padding-bottom: 0rem;
-    background-image: linear-gradient(to top, var(--Color-fondo-principal) 0%, rgba(214, 62, 235, 0.616) 100%);
-    background-color: rgba(246, 174, 249, 0.881);
+    background-image: linear-gradient(to top, rgba(255, 231, 249, 0.925) 5%, rgba(209, 77, 161, 0.783) 95%);
+    background-color: rgba(246, 174, 249, 0);
     text-shadow: 1px 1px rgb(147, 47, 248);
     color: var(--Color-fondo-enlace);
     border-radius: 1rem;
@@ -190,11 +193,13 @@ a {
 }
 .container-serv {
     max-width: fit-content;
+    min-width: fit-content;
     margin-top: 2px;
     /*display: flex;*/
     margin: 0 auto;
     border-radius: 1rem;
     background-image:url(globos.png);
+    background-size: cover;
     background-position: center;
     height: 100%;
     
@@ -206,7 +211,9 @@ a {
     /*max-width: fit-content;
     min-width: fit-content;*/
  width: 85%;
- height: 100%;   
+ height: 100%;
+ background-image:url(globos.png);
+ background-size: contain;   
 }
 
 .serv-contenido p {
@@ -319,6 +326,14 @@ textarea {
     flex-direction: column;
 
 }
+
+.mini-bar__portafolio {
+    background-image: linear-gradient(to top, rgb(237, 232, 234) 30%, rgba(255, 192, 203, 0.082) 70%);
+
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
 .serv-contenido__portafolio del{
     font-size: 1.4rem;
 }
@@ -344,6 +359,7 @@ textarea {
     font-size: 1.7rem;
     margin: 0 auto;
 }
+
 
 .serv-contenido__portafolio--candyBarCompletoSemiOvalo, .serv-contenido__portafolio--candyBarCompletoCircular {
     
@@ -544,8 +560,26 @@ transform: scale(1.65);
         flex-direction: column;
     }
 }
+@media (max-width: 968px) {
+    .serv-contenido__portafolio--candyBarCompletoSemiOvalo, .serv-contenido__portafolio--candyBarCompletoCircular, .serv-contenido__portafolio--piñatas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .serv-contenido__portafolio--piñatas img:hover, .serv-contenido__portafolio--candyBarCompletoCircular img:hover, .serv-contenido__portafolio--candyBarCompletoSemiOvalo img:hover, .box:hover {
+        transform: none;
+    }
+}
 /*TAMAÑO TABLET*//*TAMAÑO TABLET*//*TAMAÑO TABLET*//*TAMAÑO TABLET*//*TAMAÑO TABLET*//*TAMAÑO TABLET*//*TAMAÑO TABLET*//*TAMAÑO TABLET*/
 @media (max-width: 650px) {
+
+    .serv-contenido h2 {
+        font-size: 1.6rem;
+    }
+    .serv-contenido, .container-serv {
+        width: 100%;
+    }
     .serv-contenido__portafolio{
         display: flex;
         flex-direction: column;
@@ -557,7 +591,7 @@ transform: scale(1.65);
     .serv-contenido__portafolio:nth-child(even){
         display: flex;
         flex-direction: column;
-        transform: none;
+        
     }
     .serv-contenido__portafolio--piñatas, .serv-contenido__portafolio--candyBarCompletoCircular, .serv-contenido__portafolio--candyBarCompletoSemiOvalo {
         display: flex;
@@ -566,7 +600,7 @@ transform: scale(1.65);
         gap: 10px 40px
     
     }
-    .serv-contenido__portafolio--piñatas img:hover, .serv-contenido__portafolio--candyBarCompletoCircular img:hover, .serv-contenido__portafolio--candyBarCompletoSemiOvalo img:hover {
+    .serv-contenido__portafolio--piñatas img:hover, .serv-contenido__portafolio--candyBarCompletoCircular img:hover, .serv-contenido__portafolio--candyBarCompletoSemiOvalo img:hover, .box:hover {
         transform: none;
     }
     .box {
@@ -579,11 +613,12 @@ transform: scale(1.65);
     .nav-bar2 {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        font-size: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }    
-    a {
-        font-size: 1rem;
+    .nav-bar2 a {
+        font-size: 1.2rem;
     }   
     .span1 {
     font-size: 1rem;
@@ -598,9 +633,40 @@ transform: scale(1.65);
     }
     .boton__redes {
         position: fixed;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
         top: 80px;
-        right: 0px;
-        transform: scale(0.7);
+        left: 0px;
+        transform: scale(0.5);
+        margin:0rem 1rem;
     }
+    .serv-contenido__portafolio--piñatas a {
+        font-size: 1.4rem;
+        font-weight: 700;
+        
+    }
+    .serv-contenido__portafolio--piñatas a:hover{
+        transform: scale(1.4);
+        transition: all 200ms;
+    }
+    .mini-bar__portafolio a:hover {
+        transform: scale(1.14);
+        transition: all 200ms;
+    }
+    .mini-bar__portafolio, .mini-bar__portafolio a {
+
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        font-size: 1.2rem;
+        text-shadow: 2px 1px rgba(0, 0, 0, 0.319);
+
+    } 
 }
+
 /*FIN TAMAÑO TABLET*//*FIN TAMAÑO TABLET*//*FIN TAMAÑO TABLET*//*FIN TAMAÑO TABLET*//*FIN TAMAÑO TABLET*//*FIN TAMAÑO TABLET*//*FIN TAMAÑO TABLET*/
