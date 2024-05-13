@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    
     <link rel="shortcut icon" href="static/img/logo.png">
+    
+    <!--Preload-->
+    
+    <link rel="preload" href="fonts/fonts.css" as="font">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="css/globos.png" as="image">
+
+    <!--PREFETCH-->
+    
+    <link rel="prefetch" href="/portafolio.html" as="document">
+    
     <title>Creation CYM</title>
 </head>
 <body>
