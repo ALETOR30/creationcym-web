@@ -126,20 +126,31 @@ p {
 
 
 /**NAVEGADOR HEADER*/
-
-.nav-bar2 {
-   
-    display: flex;
+.nav-bar__logo {
+    height: 4rem;
     
 }
 
 .nav-bar {
+   margin: 0;
+   padding: 0;
+    display: flex;
+}
+.nav-bar2 {
+   margin: 0;
+   padding: 0;
+    display: flex;
+    
+}
+
+.nav-bar2 {
     position: fixed;
     top: 0px;
     margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding-top: 0.5rem;
     padding-bottom: 0rem;
     background-image: linear-gradient(to top, rgba(255, 231, 249, 0.925) 5%, rgba(209, 77, 161, 0.783) 95%);
@@ -149,7 +160,8 @@ p {
     border-radius: 1rem;
     border-bottom: 4px solid #ac7becb7;
     margin-bottom: 8px;
-    
+    margin: 0;
+    padding: 0;
 }
 nav a:hover, .nav__bar--activo {
     color: var(--Color-fondo-enlace);
@@ -207,14 +219,25 @@ a {
    
 
 }
+@media (min-width:768px) {
+    .container-serv__portafolio h1 {
+        font-size: 2rem;
+    }
 
+}
+.container-serv__portafolio h1 {
+    font-size: 6rem;
+}
+.container-serv__portafolio{ 
+    padding-top: 50px;
+}
 .container-serv__portafolio {
     /*CONTENEDOR PRICIPAL portafolios*/
  width: 90%;
  height: 100%;
  background-image:url(globos.png);
  background-size: contain;
- background-repeat: ;   
+
 }
 
 .serv-contenido p {
@@ -245,7 +268,7 @@ a {
     color: black;
     background-color: #f6f6f0a0;
     transition: all 200ms;
-    transform: scale(1.25);
+    transform: scale(1.070);
     
     
 }
@@ -256,6 +279,8 @@ a {
 .box h3 {
     color:rgb(214, 212, 214);
     text-shadow: 1px 2px rgb(103, 56, 103);
+    font-size: 2rem;
+    font-weight: 700;
 
     /*background-color: rgba(249, 250, 249, 0.847);*/
     
