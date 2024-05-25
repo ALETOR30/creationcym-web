@@ -91,7 +91,7 @@ p {
     margin: 0 auto;
     height: 250px;
     width: 96%;
-    background: url(header5.jpg);
+    background: url(globos.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -148,13 +148,13 @@ p {
     top: 10px;
     margin: 0 auto;
     width: 100%;
-    height: 11%;
+    height: fit-content;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-top: 3rem;
     padding-bottom: 0rem;
-    background-image: linear-gradient(to top, rgba(255, 231, 249, 0.925) 5%, rgba(209, 77, 161, 0.783) 95%);
+    background-image: linear-gradient(to top, rgba(255, 231, 249, 0.632) 5%, rgba(209, 77, 161, 0.783) 95%);
     background-color: rgba(246, 174, 249, 0);
     text-shadow: 1px 1px rgb(147, 47, 248);
     color: var(--Color-fondo-enlace);
@@ -222,7 +222,8 @@ a {
     background-image:url(globos.png);
     background-size: cover;
     background-position: center;
-    height: 100%;
+    height: fit-content;
+    
     
    
 
@@ -237,14 +238,15 @@ a {
     font-size: 6rem;
 }
 .container-serv__portafolio{ 
-    padding-top: 50px;
+    
 }
 .container-serv__portafolio {
     /*CONTENEDOR PRICIPAL portafolios*/
  width: 90%;
- height: 100%;
+ height: fit-content;
  background-image:url(globos.png);
  background-size: contain;
+ background-position: center;
 
 }
 
@@ -298,8 +300,9 @@ a {
     color:#eeebf2f1;
     text-shadow: 1px 2px rgb(11, 10, 11);
 }
+
 .container-serv h2 {
-    
+   
     font-size: 3.5rem;
     margin-bottom: 2px;
     color: var(--Color-fondo-enlace);
@@ -356,10 +359,13 @@ textarea {
     font-size: 1rem;
 }
 
+.serv-contenido__portafolio :nth-child(1) {
+    margin-top: 0;
+}
 .serv-contenido__portafolio {                                   /**STILOS PORTAFOLIO**/
     display: flex;                                              /**STILOS PORTAFOLIO**/
     flex-direction: column;
-    margin-top: 10rem;
+    margin-top: 120px;
 }
 
 .mini-bar__portafolio {
@@ -372,6 +378,7 @@ textarea {
     display: flex;
     justify-content: space-evenly;
     font-size: 1.5rem;
+    border-style: none;
 }
 .serv-contenido__portafolio del{
     font-size: 1.4rem;
@@ -383,16 +390,14 @@ textarea {
     grid-template-columns: repeat(4, 1fr);
 
 
-    grid-template-rows: 120px repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     gap: 10px;
 
 }
 
 
 
-.serv-contenido__portafolio--candyBarCompletoSemiOvalo h2 {
 
-    grid-column: 1 / 5;
 }
 .serv-contenido__portafolio--candyBarCompletoSemiOvalo p, .serv-contenido__portafolio--candyBarCompletoCircular p{
     font-size: 1.7rem;
@@ -501,7 +506,7 @@ grid-row: 4 / 5;
 
 
 .serv-contenido__portafolio--candyBarCompletoSemiOvalo img:hover, .serv-contenido__portafolio--candyBarCompletoCircular img:hover {   
-    transform: scale(1.5);
+    transform: scale(1.35);
     transition: all 300ms;
     background-color: rgba(250, 246, 247, 0.777);
     -webkit-box-shadow: 2px 1px 20px -6px rgba(0,0,0,0.75);
