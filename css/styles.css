@@ -151,7 +151,7 @@ p {
     height: fit-content;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: 3rem;
     padding-bottom: 0rem;
