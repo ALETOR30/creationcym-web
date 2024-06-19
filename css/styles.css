@@ -87,11 +87,18 @@ span {
 p {
     font-size: 80%;
 }
+.webp .header .container-serv .container-serv__portafolio .footer-div{
+    background-image: url(globos.webp);
+}
+.no-webp .header .container-serv .container-serv__portafolio .footer-div{
+    background-image: url(globos.png);
+}
+
  header {
     margin: 0 auto;
     height: 250px;
     width: 96%;
-    background: url(globos.png);
+    /* background-image: url(globos.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -220,7 +227,7 @@ a {
     /*display: flex;*/
     margin: 0 auto;
     border-radius: 1rem;
-    background-image:url(globos.png);
+    /* background-image:url(globos.png); */
     background-size: cover;
     background-position: center;
     height: fit-content;
@@ -245,7 +252,7 @@ a {
     /*CONTENEDOR PRICIPAL portafolios*/
  width: 90%;
  height: fit-content;
- background-image:url(globos.png);
+ /* background-image:url(globos.png); */
  background-size: contain;
  background-position: center;
 
@@ -572,7 +579,7 @@ footer {
     font-family: 'Harlow-Solid-Italic';
 }
 .footer-div {
-    background: url(globos.png);
+    /* background: url(globos.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
