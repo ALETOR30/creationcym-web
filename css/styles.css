@@ -87,10 +87,10 @@ span {
 p {
     font-size: 80%;
 }
-.webp .header .container-serv .container-serv__portafolio .footer-div{
+.webp, header, .container-serv, .container-serv__portafolio, .footer-div {
     background-image: url(globos.webp);
 }
-.no-webp .header .container-serv .container-serv__portafolio .footer-div{
+.no-webp, header, .container-serv, .container-serv__portafolio, .footer-div{
     background-image: url(globos.png);
 }
 
@@ -228,7 +228,7 @@ a {
     margin: 0 auto;
     border-radius: 1rem;
     /* background-image:url(globos.png); */
-    background-size: cover;
+    background-size:auto;
     background-position: center;
     height: fit-content;
     
